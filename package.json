@@ -1,0 +1,28 @@
+{
+  "name": "otryv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhenja789/otryv.git"
+  },
+  "keywords": [],
+  "author": "DiyWebDev - https://github.com/newstreetpunk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhenja789/otryv/issues"
+  },
+  "homepage": "https://github.com/Zhenja789/otryv#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.6.0"
+  }
+}
