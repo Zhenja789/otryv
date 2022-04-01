@@ -20,7 +20,9 @@
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "browser-sync-webpack-plugin": "^2.3.0",
+    "filename-regex": "^2.0.1",
     "laravel-mix": "^6.0.43",
+    "mix-html-builder": "^0.8.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.49.10",
     "sass-loader": "^12.6.0"

@@ -1,8 +1,18 @@
 let mix = require('laravel-mix');
+require('mix-html-builder');
 
 mix
-	.js('src/js/main.js', 'js/main.js')
-	.sass('src/sass/style.scss', 'css/style.css');
+	.js('src/js/main.js', 'dist/js/main.js')
+	.sass('src/sass/style.scss', 'dist/css/style.css')
+	.html({
+		htmlRoot: './src/index.html',
+		output: 'dist',
+		partialRoot: './src/partials',
+		layoutRoot: './src/layouts',
+		minify: {
+			removeComments: true
+		}
+});
 
 if (mix.inProduction()) {
 	mix.version();
@@ -10,9 +20,9 @@ if (mix.inProduction()) {
 	mix.sourceMaps().webpackConfig({ devtool: 'inline-source-map' });
 	mix.browserSync({
 		server: {
-			baseDir: "./",
+			baseDir: "./dist",
 		},
-		files: ['*.html', 'css/*.css', 'js/*.js'],
+		files: ['dist/*.html', 'dist/css/*.css', 'dist/js/*.js'],
 		notify: false,
 		open: true
 	});
